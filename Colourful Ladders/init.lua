@@ -18,26 +18,29 @@ local colours = {
 
 for i in ipairs(colours) do
     
-    minetest.register_node("noah:wooden_ladder_" .. colours[i][1], {
+    minetest.register_node("colourful_ladders:wooden_ladder_" .. colours[i][1], {
         description = colours[i][2] .. " Wooden Ladder",
+	    drawtype = "signlike",
         tiles = {"wooden_ladder.png^[colorize:" .. colours[i][3]},
         inventory_image = "wooden_ladder.png^[colorize:" .. colours[i][3],
+	    wield_image = "wooden_ladder.png^[colorize:" .. colours[i][3],
         paramtype = "light",
         paramtype2 = "wallmounted",
         sunlight_propagates = true,
         walkable = false,
-        climable = true,
+        climbable = true,
         is_ground_content = false,
-        selection_box = {
-            type = "wallmounted",
-        },
-        groups = {
-            choppy = 2,
-            oddly_breakable_by_hand = 3,
-            flammable = 2,
-        },
+        selection_box = {type = "wallmounted"},
+        groups = {choppy = 2, oddly_breakable_by_hand = 3, flammable = 2},
         legacy_wallmounted = true,
         sounds = default.node_sound_wood_defaults(),
+    })
+
+    minetest.register_craft({
+        output = "colourful_ladders:wooden_ladder_" .. colours[i][1] .. " 1",
+        recipe = {
+            {"default:ladder_wood", "dye:" .. colours[i][1], ""},
+        }
     })
 
 end
