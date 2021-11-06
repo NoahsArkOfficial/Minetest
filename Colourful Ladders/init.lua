@@ -57,7 +57,7 @@ local colours = {
     {"ebony", "Ebony", "#555D50"},
     {"granite", "Granite", "#676767"},
     {"gray", "Gray", "#808080"},
-    {"wolf", "Wolf", "#50A4B"},
+    {"wolf", "Wolf", "#504A4B"},
     {"cloud", "Cloud", "#B6B6B4"},
     {"iridium", "Iridium", "#3D3C3A"},
     {"midnight", "Midnight", "#2B1B17"},
