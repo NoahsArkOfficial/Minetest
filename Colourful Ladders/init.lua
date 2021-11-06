@@ -63,7 +63,7 @@ local colours = {
     {"midnight", "Midnight", "#2B1B17"},
     {"onyx", "Onyx", "#353839"},
     {"space", "Space", "#414A4C"},
-    {"taupe", "Taupe", "#483C32},
+    {"taupe", "Taupe", "#483C32"},
 }
 
 for i in ipairs(colours) do
