@@ -1,3 +1,4 @@
+local colours = {
 	{"black",      "Black",      "#000000b0"},
 	{"blue",       "Blue",       "#015dbb70"},
 	{"brown",      "Brown",      "#a78c4570"},
