@@ -1,2 +1,2 @@
 # More Ladders
-Adds 15 new colourful ladders to the game.
+Adds up to 40 new colourful ladders to the game.
